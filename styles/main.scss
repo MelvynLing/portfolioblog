@@ -1,0 +1,24 @@
+//fonts 
+@import './shared/fonts';
+//index page style
+@import './index';
+//components style
+@import './header';
+
+html, body {
+     height:100%;
+     width:100%;
+     font-family: 'Pridi';
+}
+
+.particlesBG {
+     position: fixed !important;
+     }
+
+.self-typed {
+     font-size: 35px;
+     letter-spacing: 3px;
+     color: #dba919;
+     font-weight: 200;
+     text-align: center;
+}

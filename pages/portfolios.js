@@ -1,6 +1,8 @@
 import React from 'react';
 import BaseLayout from '../components/layouts/Baselayout';
 import axios from 'axios';
+import BasePage from '../components/BasePage';
+import ParticleBG from '../components/shared/ParticleBG';
 
 import { Link } from '../routes';
 
@@ -36,11 +38,12 @@ class Portfolios extends React.Component {
 
           return(
                <BaseLayout>
-               
-                    <h1>I am portfolio</h1>
-                    <ul>
-                         { this.renderPosts(posts) }
-                    </ul>
+                    <BasePage className="portfolios-page">
+                         I am portfolio
+                              <ul>
+                                   { this.renderPosts(posts) }
+                              </ul>
+                    </BasePage>
                </BaseLayout>
           )
      }   

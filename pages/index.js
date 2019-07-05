@@ -11,9 +11,9 @@ class Index extends React.Component {
      constructor(props) {
           super(props);
 
-          this.knowledge = ['HTML5','CSS3','JavaScript','Firebase','Node.JS','MySQL','MongoDB','React.js']
+          this.knowledge = ['HTML5','CSS3','JavaScript','Firebase','Node.JS','MySQL','MongoDB','React.js','RESTful APIs',]
 
-          this.workingOn =['Angular','TypeScript','SASS','Blockchain','Python']
+          this.workingOn =['Angular','TypeScript','SASS','Blockchain','Python',]
      }
 
      render() {

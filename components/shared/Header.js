@@ -91,7 +91,7 @@ export default class Example extends React.Component {
         <Navbar 
           className="port-navbar port-default absolute"
           color="transparent" 
-          light expand="md">
+          dark expand="md">
           <NavbarBrand 
           className="port-navbar-brand"
           href="/"> 

@@ -11,6 +11,10 @@ html, body {
      font-family: 'Pridi';
 }
 
+.clickable {
+     cursor: pointer;
+}
+
 .absolute {
      position: absolute;
    }
@@ -24,11 +28,13 @@ html, body {
      letter-spacing: 3px;
      color: #dba919;
      font-weight: 200;
-     text-align: center;
+     text-align: center !important;
+}
+.centered {
+     text-align: center
 }
 
 .base-page {
      padding-top:200px;
-     color: white;
-     
+     color: white;     
 }

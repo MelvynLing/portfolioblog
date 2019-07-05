@@ -3,15 +3,18 @@
    .port-navbar.port-default {
      width: 100%;
      z-index: 15;
-     padding: 40px;
+     padding-top: 20px;
+     text-align: center;
    
      .port-navbar {
        &-brand {
          color: white;
-         font-size: 24px;
-         text-transform: uppercase;
+         font-size: 34px;
+         font-variant: small-caps;
          letter-spacing: 1px;
          font-weight: bold;
+         text-decoration: underline;
+         text-decoration-color: #dba919ed;
        }
    
        &-item {
@@ -23,15 +26,19 @@
          color: white;
          font-weight: bold;
          letter-spacing: 0.8px;
-         font-size: 18px;
-         text-transform: uppercase;
+         font-size: 25px;
+         font-variant: small-caps;;
    
-         &.active {
-         color: #dba919;
-         }
+        //  &.active {
+        //  color: #dba919;
+        //  text-decoration: underline;
+        //  text-decoration-color: white;
+        //  }
    
          &:hover, &:focus {
            color: #dba919;
+           text-decoration: underline;
+           text-decoration-color: white;
          }
        }
      }

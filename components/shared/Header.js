@@ -1,52 +1,3 @@
-// import React from 'react';
-// import Link from 'next/link';
-
-// class Header extends React.Component {
-
-//      render() {
-
-//           return (
-//                <React.Fragment>
-
-                    // <Link href="/">
-                    //      <a style={{'fontSize':'25px'}}> Home </a>
-                    // </Link>
-
-//                     <Link href="/about">
-//                          <a> About </a>
-//                     </Link>
-
-//                     <Link href="/portfolios">
-//                          <a> Portfolios </a>
-//                     </Link>
-
-//                     <Link href="/blog">
-//                          <a> Blog </a>
-//                     </Link>
-
-//                     <Link href="/cv">
-//                          <a> CV </a>
-//                     </Link>
-//                     <style jsx>
-//                     {
-//                          `
-//                          a {
-//                               font-size: 25px;
-//                          };
-//                          .pelem {
-//                               color: green;
-//                               fontsize: 50px;
-//                          }
-//                          `
-//                     }
-//                     </style>
-//                </React.Fragment>
-//                )
-//      }
-// }
-
-// export default Header;
-
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -58,6 +9,7 @@ import {
   NavItem,
   NavLink,
      } from 'reactstrap';
+import auth0 from '../../services/auth0' 
 
 
 const BSNavLink = (props) => {
@@ -67,6 +19,18 @@ const BSNavLink = (props) => {
                <a className="nav-link port-navbar-link"> {text} </a>
           </Link>
      )
+}
+
+const Login = () => {
+  return(
+    <span onClick={auth0.login} className="nav-link port-navbar-link clickable">Log In</span>
+  )
+}
+
+const Logout= () => {
+  return(
+    <span className="nav-link port-navbar-link clickable">Log Out</span>
+  )
 }
 
 export default class Example extends React.Component {
@@ -114,6 +78,12 @@ export default class Example extends React.Component {
               </NavItem>
               <NavItem className="port-navbar-item">
                     <BSNavLink route='/cv' text="Resume"/>
+              </NavItem>
+              <NavItem className="port-navbar-item">
+                    <Login/>
+              </NavItem>
+              <NavItem className="port-navbar-item">
+                    <Logout/>
               </NavItem>
             </Nav>
           </Collapse>
